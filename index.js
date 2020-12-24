@@ -1,2 +1,2 @@
-var desktopIdle = require('./desktopIdle');
+var desktopIdle = require('./desktopIdle.node');
 module.exports = desktopIdle;
