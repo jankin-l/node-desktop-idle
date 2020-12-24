@@ -8,6 +8,13 @@
     "email": "im@bithavoc.io",
     "url": "https://github.com/bithavoc/node-desktop-idle/issues"
   },
+  "binary": {
+    "module_name": "desktopIdle",
+    "module_path": "./lib/binding/{node_abi}-{platform}-{arch}",
+    "host": "https://cdn.npm.taobao.org/dist",
+    "remote_path": "./{name}/v{version}/{toolset}/",
+    "package_name": "{node_abi}-{platform}-{arch}.tar.gz"
+  },
   "keywords": [
     "idle",
     "desktop",
@@ -37,6 +44,9 @@
   "engines": {
     "node": ">=7.9.0"
   },
+  "dependencies": {
+    "node-pre-gyp": "^0.11.0"
+  },
   "devDependencies": {
     "eslint": "^4.6.1",
     "npm-watch": "^0.2.0",
@@ -53,8 +63,10 @@
     }
   },
   "scripts": {
+    "install": "node-pre-gyp install --fallback-to-build",
     "test_watch": "npm install && npm test",
     "test": "node test/main_test.js",
     "watch": "npm-watch"
-  }
+  },
+  "__npminstall_done": false
 }
