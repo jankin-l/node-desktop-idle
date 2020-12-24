@@ -123,7 +123,7 @@
         "copies": [
             {
               "files": [ "<(PRODUCT_DIR)/desktopIdle.node" ],
-              "destination": "<(module_path)"
+              "destination": "./"
             }
         ]
       }
