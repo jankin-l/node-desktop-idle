@@ -45,6 +45,7 @@
     "node": ">=7.9.0"
   },
   "dependencies": {
+    "node-abi": "^2.19.3",
     "node-pre-gyp": "^0.11.0"
   },
   "devDependencies": {
