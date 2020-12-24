@@ -10,7 +10,7 @@
   },
   "binary": {
     "module_name": "desktopIdle",
-    "module_path": "./lib/binding/{node_abi}-{platform}-{arch}",
+    "module_path": "./",
     "host": "https://cdn.npm.taobao.org/dist",
     "remote_path": "./{name}/v{version}/{toolset}/",
     "package_name": "{node_abi}-{platform}-{arch}.tar.gz"
